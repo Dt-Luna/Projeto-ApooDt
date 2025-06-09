@@ -27,3 +27,13 @@ entity Serie{
     genero multivalued
 }
 
+weak entity Resenha{
+    titulo partial-key
+    encorpo
+    tema
+}
+entity Gerenciador{
+    username key
+    email key
+    idade
+}
