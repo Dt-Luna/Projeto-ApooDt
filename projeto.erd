@@ -29,6 +29,22 @@ entity Serie{
     status
 }
 
+entity Lista{
+    codigo key
+    genero multivalued
+    status
+    duracao multivalued
+    ano
+    diretor
+}
+
+weak entity Comentario{
+    codigo partial-key
+    titulo 
+    episodio multivalued
+    temporada multivalued
+}
+
 entity Gerenciador{
     username key
     email key
@@ -52,6 +68,18 @@ weak entity Episodio{
     descricao
     duracao
     status
+}
+
+weak relationship Episodio_Comentario{
+    Comentario[0..N] -> Episodio[1..N]
+}
+
+weak relationship Serie_Lista{
+    Lista[N] -> Serie[1..N]
+}
+
+weak relationship Filme_Comentario{
+    Comentario[0..N] -> Filme[1..N]
 }
 
 weak relationship Episodio_Serie {
