@@ -10,20 +10,33 @@ entity Usuario {
 entity Filme {
     codigo key
     nome
-    ano de lancamento
+    ano
     diretor
-    classificacao indicativa
+    classificacao_indicativa
     avaliacao
     genero multivalued
+    status
 }
 
 entity Serie{
     codigo key
     nome
-    ano de lancamento
+    ano
     diretor
-    classificacao indicativa
+    classificacao_indicativa
     avaliacao
     genero multivalued
+    status
 }
 
+weak entity Episodio{
+    nome 
+    numero_temporada partial-key
+    descricao
+    duracao
+    status
+}
+
+weak relationship Episodio_Serie {
+    Episodio[1..N] -> Serie [1..1]
+}
