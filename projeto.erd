@@ -10,21 +10,29 @@ entity Usuario {
 entity Filme {
     codigo key
     nome
-    ano de lancamento
+    ano
     diretor
-    classificacao indicativa
+    classificacao_indicativa
     avaliacao
     genero multivalued
+    status
 }
 
 entity Serie{
     codigo key
     nome
-    ano de lancamento
+    ano
     diretor
-    classificacao indicativa
+    classificacao_indicativa
     avaliacao
     genero multivalued
+    status
+}
+
+entity Gerenciador{
+    username key
+    email key
+    idade
 }
 
 weak entity Resenha{
@@ -32,10 +40,17 @@ weak entity Resenha{
     encorpo
     tema
 }
-entity Gerenciador{
-    username key
-    email key
-    idade
+
+weak entity Episodio{
+    nome 
+    numero_temporada partial-key
+    descricao
+    duracao
+    status
+}
+
+weak relationship Episodio_Serie {
+    Episodio[1..N] -> Serie [1..1]
 }
 
 weak relationship Resenha_Autor{
