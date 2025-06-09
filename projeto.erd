@@ -1,0 +1,29 @@
+erdiagram Projeto
+notation=chen
+
+entity Usuario {
+    email key
+    username key
+    idade
+}
+
+entity Filme {
+    codigo key
+    nome
+    ano de lancamento
+    diretor
+    classificacao indicativa
+    avaliacao
+    genero multivalued
+}
+
+entity Serie{
+    codigo key
+    nome
+    ano de lancamento
+    diretor
+    classificacao indicativa
+    avaliacao
+    genero multivalued
+}
+
