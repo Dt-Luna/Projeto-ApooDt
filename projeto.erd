@@ -29,6 +29,18 @@ entity Serie{
     status
 }
 
+entity Gerenciador{
+    username key
+    email key
+    idade
+}
+
+weak entity Resenha{
+    titulo partial-key
+    encorpo
+    tema
+}
+
 weak entity Episodio{
     nome 
     numero_temporada partial-key
@@ -39,4 +51,14 @@ weak entity Episodio{
 
 weak relationship Episodio_Serie {
     Episodio[1..N] -> Serie [1..1]
+}
+
+weak relationship Resenha_Autor{
+    Resenha[0..N] -> Usuario[0..N]
+}
+relationship ManterSeries{
+    Gerenciador[0..N] -> Serie[1]
+}
+relationship ManterFilme{
+    Gerenciador[0..N] -> Filme[1]
 }
