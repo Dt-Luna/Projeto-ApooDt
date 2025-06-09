@@ -37,3 +37,14 @@ entity Gerenciador{
     email key
     idade
 }
+
+
+weak relationship Resenha_Autor{
+    Resenha[0..N] -> Usuario[0..N]
+}
+relationship ManterSeries{
+    Gerenciador[0..N] -> Serie[1]
+}
+relationship ManterFilme{
+    Gerenciador[0..N] -> Filme[1]
+}
