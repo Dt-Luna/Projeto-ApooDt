@@ -39,7 +39,7 @@ entity Lista{
 }
 
 weak entity Comentario{
-    codigo key
+    codigo partial-key
     titulo 
     episodio multivalued
     temporada multivalued
