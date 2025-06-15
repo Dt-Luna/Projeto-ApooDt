@@ -7,27 +7,31 @@ entity Usuario {
     idade
 }
 
-entity Filme {
-    codigo key
+entity Titulo {
+    codigo_titulo key
     nome
     ano
     diretor
     classificacao_indicativa
     avaliacao
-    genero multivalued
-    status
+}
+
+entity Filme ISA Titulo
+entity Serie ISA Titulo
+
+entity Filme {
+    duracao
 }
 
 entity Serie{
-    codigo key
-    nome
-    ano
-    diretor
-    classificacao_indicativa
-    avaliacao
-    genero multivalued
-    status
+    num_temporadas
+    num_episodios
 }
+
+entity genero{
+    nome key
+}
+
 
 entity Lista{
     codigo key
@@ -71,7 +75,7 @@ weak entity Episodio{
 }
 
 weak relationship Episodio_Comentario{
-    Comentario[0..N] -> Episodio[1..N]
+    Comentario[1..N] -> Episodio[0..N]
 }
 
 weak relationship Serie_Lista{
@@ -79,7 +83,7 @@ weak relationship Serie_Lista{
 }
 
 weak relationship Filme_Comentario{
-    Comentario[0..N] -> Filme[1..N]
+    Comentario[1..N] -> Filme[0..N]
 }
 
 weak relationship Episodio_Serie {
@@ -91,11 +95,11 @@ weak relationship Resenha_Autor{
 }
 
 weak relationship Resenha_filme{ 
-    Resenha[1] -> Filme[0..N]
+    Resenha[0..N] -> Filme[1]
 }
 
 weak relationship Resenha_Serie{ 
-    Resenha[1] -> Serie[0..N]
+    Resenha[0..N] -> Serie[1]
 }
 
 relationship ManterSeries{
@@ -107,7 +111,15 @@ relationship Manter_Filme{
 }
 
 relationship Moderador_Resenha{
-    Gerenciador[0..N] -> Resenha[0..1]
+    Gerenciador[0..1] -> Resenha[0..N]
+}
+
+relationship FilmeGenero {
+    Filme [1] -> Genero [1..N]
+}
+
+relationship SerieGenero {
+    Serie [1] -> Genero [1..N]cccc
 }
 
 // weak relationship Acompanhar_Progresso{ 
