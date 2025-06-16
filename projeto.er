@@ -28,22 +28,17 @@ entity Serie{
     num_episodios
 }
 
-entity genero{
+entity Genero{
     nome key
 }
 
-
 entity Lista{
-    codigo key
-    genero multivalued
-    status
-    duracao multivalued
-    ano
-    diretor
+    user_email key
+    status //Não assistido, assistido, assistindo
 }
 
 weak entity Comentario{
-    codigo partial-key
+    user_email partial-key
     titulo 
     episodio multivalued
     temporada multivalued
@@ -55,13 +50,14 @@ entity Gerenciador{
     idade
 }
 
-// weak entity Progresso{ fraco para usuário
-//     Filme_Serie partial-key
-//     Tempo_finalizar
-// }
+weak entity Progresso{ //fraco para usuário
+    Filme_Serie partial-key
+    Tempo_finalizar
+ }
 
 weak entity Resenha{
-    titulo partial-key
+    user_email partial-key
+    titulo 
     encorpo
     tema
 }
@@ -78,8 +74,8 @@ weak relationship Episodio_Comentario{
     Comentario[1..N] -> Episodio[0..N]
 }
 
-weak relationship Serie_Lista{
-    Lista[N] -> Serie[1..N]
+weak relationship Titulo_Lista{
+    Lista[N] -> Titulo[1..N]
 }
 
 weak relationship Filme_Comentario{
@@ -94,34 +90,22 @@ weak relationship Resenha_Autor{
     Resenha[0..N] -> Usuario[0..N]
 }
 
-weak relationship Resenha_filme{ 
-    Resenha[0..N] -> Filme[1]
+weak relationship Resenha_Titulo{ 
+    Resenha[0..N] -> Titulo[1]
 }
 
-weak relationship Resenha_Serie{ 
-    Resenha[0..N] -> Serie[1]
-}
-
-relationship ManterSeries{
-    Gerenciador[0..N] -> Serie[0..1]
-}
-
-relationship Manter_Filme{
-    Gerenciador[0..N] -> Filme[0..1]
+relationship Manter_Titulo{
+    Gerenciador[0..N] -> Titulo[0..1]
 }
 
 relationship Moderador_Resenha{
     Gerenciador[0..1] -> Resenha[0..N]
 }
 
-relationship FilmeGenero {
-    Filme [1] -> Genero [1..N]
+relationship Titulo_Genero {
+    Titulo [1] -> Genero [1..N]
 }
 
-relationship SerieGenero {
-    Serie [1] -> Genero [1..N]cccc
+weak relationship Acompanhar_Progresso{ 
+    Progresso[1] -> Usuario[0..N]
 }
-
-// weak relationship Acompanhar_Progresso{ 
-//     Progresso[1] -> Usuario[0..N]
-// }
