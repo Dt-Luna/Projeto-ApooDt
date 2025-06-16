@@ -16,16 +16,15 @@ entity Titulo {
     avaliacao
 }
 
-entity Filme ISA Titulo
-entity Serie ISA Titulo
-
-entity Filme {
-    duracao
+entity Filme extends Titulo{
+    duracao 
+    codigo key
 }
 
-entity Serie{
+entity Serie extends Titulo{
     num_temporadas
     num_episodios
+    codigo key
 }
 
 entity Genero{
