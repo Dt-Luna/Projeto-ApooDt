@@ -3,7 +3,7 @@ Documentação do projeto desenvolvido como atividade da disciplina de Banco de 
 
 ## Visão do Produto <h2>
 
-#### Objetivo <h4>
+### Objetivo <h3>
 Esse sistema tem como objetivo possibilitar ao usuário montar sua própria lista de filmes e séries nacionais, marcando o que já assistiu, o que quer assistir, e acompanhar o progresso em temporadas de séries. A plataforma também permitirá avaliar títulos e adicionar anotações pessoais.
 
 ### Público-alvo <h3>
