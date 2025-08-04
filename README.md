@@ -1,5 +1,5 @@
-# **Sistema de Lista de Filmes e Séries Nacionais** <h1>
-Documentação do projeto desenvolvido como atividade da disciplina de Banco de Dados e Análise a Projeto Orientado a Objetos, no Curso Técnico em Desenvolvimento de Sistemas para Internet – IFRN - Campus Natal-Central.
+># **Sistema de Lista de Filmes e Séries Nacionais** <h1>
+>Documentação do projeto desenvolvido como atividade da disciplina de Banco de Dados e Análise a Projeto Orientado a Objetos, no Curso Técnico em Desenvolvimento de Sistemas >para Internet – IFRN - Campus Natal-Central.
 
 ## Visão do Produto <h2>
 
@@ -41,14 +41,14 @@ O modelo conceitual representa as classes de análise do sistema, com seus princ
 atributos e relacionamentos.
 
 As descrições das classes estão disponíveis no arquivo modelo-conceitual.md.
-Link: [Modelo Conceitual](link aqui)
+Link: [Modelo Conceitual]()
 
 ### Tecnologias utilizadas <h3>
 - Documentação escrita em Markdown
 - Diagramas elaborados com Astah
 - Repositório hospedado no GitHub
 
-### Equipe <h3>
-- Juliana Vianna de Araújo [20241011110013]
-- Luna de Oliveira Bezerril Deodato [20241011110004]
-- Nicole de Aquino Xavier [20241011110008]
+>### Equipe <h3>
+>- Juliana Vianna de Araújo [20241011110013]
+>- Luna de Oliveira Bezerril Deodato [20241011110004]
+>- Nicole de Aquino Xavier [20241011110008]
