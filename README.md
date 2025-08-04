@@ -39,7 +39,7 @@ Documentação do projeto desenvolvido como atividade da disciplina de Banco de 
 >O modelo conceitual representa as classes de análise do sistema, com seus principais
 >atributos e relacionamentos. As descrições das classes estão disponíveis no arquivo modelo-conceitual.md.
 
->Link: [Modelo Conceitual]()
+>Link: [Modelo Conceitual](link aqui)
 
 ### Tecnologias utilizadas <h3>
 >- Documentação escrita em Markdown
