@@ -46,6 +46,9 @@ Documentação do projeto desenvolvido como atividade da disciplina de Banco de 
 >- Diagramas elaborados com Astah
 >- Repositório hospedado no GitHub
 
+
+
+
 ### Equipe <h3>
 >- Juliana Vianna de Araújo [20241011110013]
 >- Luna de Oliveira Bezerril Deodato [20241011110004]
