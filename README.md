@@ -29,8 +29,9 @@ Esse sistema tem como objetivo possibilitar ao usuário montar sua própria list
 # Casos de Uso
 Os principais casos de uso identificados são:
 -Realizar o cadastro do usuário e gerenciador
--Consultar informações de títulos, listas, comentários e resenhas
--Emitir relatório de
+-Adicionar o título a uma lista ("Asistido", "Asistindo" ou "Quero assistir")
+-Avaliar filme/série/novela, fazer resenhas e comentários pessoais
+-Filtrar suas listas por status, gênero, duração, diretor ou outros critérios definidos
 Para mais detalhes, acesse o arquivo casos-de-uso.md.
 Link para o Diagrama de casos de uso
 
