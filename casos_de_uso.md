@@ -1,5 +1,6 @@
 # **Casos de uso** <h1>
 
+## 1º Caso de uso <h2>
 ### Nome: <h3>
 > Fazer login
 
@@ -21,8 +22,8 @@
 > - 4.0) [Google] valida as credenciais.
 > - 5.0) [Sistema] recebe do Google os dados de autenticação confirmados (ex.: email, nome).
 > - 6.0) [Sistema] verifica se já existe conta vinculada a esse email:
->  - Se existir, inicia sessão imediatamente.
->  - Se não existir, cria conta automaticamente com os dados recebidos e inicia sessão.
+      > - Se existir, inicia sessão imediatamente.
+      > - Se não existir, cria conta automaticamente com os dados recebidos e inicia sessão.
 > - 7.0) [Sistema] encerra a tela de login e leva o usuário à tela inicial.
 
 ### Pré-condições: <h3>
@@ -31,7 +32,7 @@
 ### Pós-condições: <h3>
 > O usuário/gerenciador estará logado no sistema e o registro deve ser cadastrado
 
-
+## 2º Caso de uso <h2>
 ### Nome: <h3>
 > Criar conta
 
@@ -39,11 +40,11 @@
 > Usuário e sistema
 
 ### Fluxo principal: <h3>
-> -1.0) [Usuário] ativa “criar conta”;
-> -2.0) [Usuário] adiciona username, email e senha;
-> -3.0) [Usuário] ativa verificação;
-> -4.0) [Sistema] valida username, email e senha;
-> -5.0) [Sistema] leva usuário a tela inicial.
+> - 1.0) [Usuário] ativa “criar conta”;
+> - 2.0) [Usuário] adiciona username, email e senha;
+> - 3.0) [Usuário] ativa verificação;
+> - 4.0) [Sistema] valida username, email e senha;
+> - 5.0) [Sistema] leva usuário a tela inicial.
 
 ### Fluxos alternativos: <h3>
 #### Cadastro com dados importados do Google <h4>
@@ -61,7 +62,7 @@
 ### Pós-condições: <h3>
 > O usuário estará logado no sistema e o registro deve ser cadastrado
 
-
+## 3º Caso de uso <h2>
 ### Nome: <h3>
 > Adicionar filme/novela/série
 
@@ -87,7 +88,7 @@
 ### Pós-condições: <h3>
 > O título será adicionado à lista escolhida e ficará disponível para gerenciamento de progresso, avaliação e comentários
 
-
+## 4º Caso de uso <h2>
 ### Nome: <h3>
 > Buscar por título
 
@@ -118,7 +119,7 @@
 ### Pós-condições: <h3>
 > O sistema apresenta os resultados da busca
 
-
+## 5º Caso de uso <h2>
 ### Nome: <h3>
 > Visualizar série/filme/novela
 
@@ -139,7 +140,7 @@
 ### Pós-condições: <h3>
 > O sistema exibe a lista com os filtros aplicado.
 
-
+## 6º Caso de uso <h2>
 ### Nome: <h3>
 > Cadastrar filme/série/novela
 
@@ -162,7 +163,7 @@
 ### Pós-condições: <h3>
 > O título que foi adicionado estará disponível para aos usuários
 
-
+## 7º Caso de uso <h2>
 ### Nome: <h3>
 > Comentar filme/série/novela
 
@@ -187,7 +188,7 @@
 ### Pós-condições: <h3>
 > O comentário será salvo e exibido junto ao título correspondente.
 
-
+## 8º Caso de uso <h2>
 ### Nome: <h3>
 > Avaliar filme/série/novela
 
@@ -207,7 +208,7 @@
 ### Pós-condições: <h3>
 > A avaliação será salva e poderá ser editada posteriormente.
 
-
+## 9º Caso de uso <h2>
 ### Nome: <h3>
 > Adicionar resenhas
 
