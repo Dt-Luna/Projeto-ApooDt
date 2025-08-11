@@ -1,4 +1,4 @@
-# **Sistema de Lista de Filmes e Séries Nacionais** <h1>
+# **Tô Vendo** <h1>
 Documentação do projeto desenvolvido como atividade da disciplina de Banco de Dados e Análise a Projeto Orientado a Objetos, no Curso Técnico em Desenvolvimento de Sistemas para Internet – IFRN - Campus Natal-Central.
 
 ## Visão do Produto <h2>
