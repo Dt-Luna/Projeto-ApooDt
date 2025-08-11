@@ -32,14 +32,14 @@ Documentação do projeto desenvolvido como atividade da disciplina de Banco de 
 >- Adicionar o título a uma lista ("Asistido", "Asistindo" ou "Quero assistir")
 >- Avaliar filme/série/novela, fazer resenhas e comentários pessoais
 >- Filtrar suas listas por status, gênero, duração, diretor ou outros critérios definidos
->- Para mais detalhes, acesse o arquivo casos-de-uso.md.
->- Link para o Diagrama de casos de uso
+>- Para mais detalhes, acesse o arquivo [casos-de-uso.md.](casos_de_uso.md)
+>- [Link para o Diagrama de casos de uso](imagens/diagrama-casos-de-uso.png)
 
 ## Modelo Conceitual <h2>
 >O modelo conceitual representa as classes de análise do sistema, com seus principais
->atributos e relacionamentos. As descrições das classes estão disponíveis no arquivo modelo-conceitual.md.
+>atributos e relacionamentos. As descrições das classes estão disponíveis no arquivo [ModeloConceitual.md.](ModeloConceitual.md)
 
->Link: [Modelo Conceitual](link aqui)
+>[Link para o Diagrama do Modelo Conceitual](imagens/modelo-conceitual.png)
 
 ## Tecnologias utilizadas <h2>
 >- Documentação escrita em Markdown
