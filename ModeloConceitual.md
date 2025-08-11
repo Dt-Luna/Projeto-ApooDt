@@ -16,4 +16,4 @@
 > Tem título, para situar os leitores do assunto, e o encorpo, que é a própria resenha. Ela é adicionada a apenas um título e precisa estar relacionada ao seu autor - o usuário -. 
 
 
-![Modelo conceitual do Sistema de Lista de Filmes e Séries Nacionais da atividade de APOO- 2bi- 2025](https://mail.google.com/mail/u/0/popout?ver=19jwb7srmkrc3#attid%253Datt_19875727586dad3d_0.2_f_mdx738ww1)
+![Modelo conceitual do Sistema de Lista de Filmes e Séries Nacionais da atividade de APOO- 2bi- 2025](imagens/modelo-conceitual.png)
