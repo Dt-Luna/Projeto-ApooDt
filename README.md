@@ -1,50 +1,52 @@
-# Sistema de Lista de Filmes e Séries Nacionais
+# **Sistema de Lista de Filmes e Séries Nacionais** <h1>
 Documentação do projeto desenvolvido como atividade da disciplina de Banco de Dados e Análise a Projeto Orientado a Objetos, no Curso Técnico em Desenvolvimento de Sistemas para Internet – IFRN - Campus Natal-Central.
 
-# Visão do Produto
+## Visão do Produto <h2>
 
-# objetivo
-Esse sistema tem como objetivo possibilitar ao usuário montar sua própria lista de filmes e séries nacionais, marcando o que já assistiu, o que quer assistir, e acompanhar o progresso em temporadas de séries. A plataforma também permitirá avaliar títulos e adicionar anotações pessoais.
+### Objetivo <h3>
+>Esse sistema tem como objetivo possibilitar ao usuário montar sua própria lista de filmes e séries nacionais, marcando o que já assistiu, o que quer assistir, e acompanhar o progresso em temporadas de séries. A plataforma também permitirá avaliar títulos e adicionar anotações pessoais.
 
-# público-alvo
-- Usuários que gostam de acompanhar filmes e séries nacionais
-- Cinéfilos que organizam o que assistem
-- Críticos amadores ou estudantes da área cinematográfica
+### Público-alvo <h3>
+>- Usuários que gostam de acompanhar filmes e séries nacionais
+>- Cinéfilos que organizam o que assistem
+>- Críticos amadores ou estudantes da área cinematográfica
 
-# principais funcionalidades
-- Cadastro de usuários e títulos
-- Consulta e busca de títulos, listas, resenhas, comentários
-- Montar lista [ "assistido", "assistindo" e "quero assistir" ]
-- Acompanhar o progresso [ em temporadas de séries ]
-- Avaliar [ padrão max 5 ]
-- Adicionar anotações/comentários [ Pessoais ]
-- Adicionar resenhas [ Monitoradas pelo gerenciador ]
-- Pesquisa com filtros [ "status", "gênero", "duração" e outros ]
+### Principais Funcionalidades <h3>
+>- Cadastro de usuários e títulos
+>- Consulta e busca de títulos, listas, resenhas, comentários
+>- Montar lista [ "assistido", "assistindo" e "quero assistir" ]
+>- Acompanhar o progresso [ em temporadas de séries ]
+>- Avaliar [ padrão max 5 ]
+>- Adicionar anotações/comentários [ Pessoais ]
+>- Adicionar resenhas [ Monitoradas pelo gerenciador ]
+>- Pesquisa com filtros [ "status", "gênero", "duração" e outros ]
 
-# restrições e premissas
--Desenvolvido para uso via navegador (web)
--Interface responsiva
--Baseado no estudo de caso apresentado na disciplina de Banco de Dados
+### Restrições e premissas <h3>
+>- Desenvolvido para uso via navegador (web)
+>- Interface responsiva
+>- Baseado no estudo de caso apresentado na disciplina de Banco de Dados
 
-# Casos de Uso
-Os principais casos de uso identificados são:
--Realizar o cadastro do usuário e gerenciador
--Consultar informações de títulos, listas, comentários e resenhas
--Emitir relatório de
-Para mais detalhes, acesse o arquivo casos-de-uso.md.
-Link para o Diagrama de casos de uso
+## Casos de Uso <h2>
+>Os principais casos de uso identificados são:
+>- Realizar o cadastro do usuário e gerenciador
+>- Adicionar o título a uma lista ("Asistido", "Asistindo" ou "Quero assistir")
+>- Avaliar filme/série/novela, fazer resenhas e comentários pessoais
+>- Filtrar suas listas por status, gênero, duração, diretor ou outros critérios definidos
+>- Para mais detalhes, acesse o arquivo casos-de-uso.md.
+>- Link para o Diagrama de casos de uso
 
-# Modelo Conceitual
-O modelo conceitual representa as classes de análise do sistema, com seus principais
-atributos e relacionamentos.
-- As descrições das classes estão disponíveis no arquivo modelo-conceitual.md.
+## Modelo Conceitual <h2>
+>O modelo conceitual representa as classes de análise do sistema, com seus principais
+>atributos e relacionamentos. As descrições das classes estão disponíveis no arquivo modelo-conceitual.md.
 
-# Tecnologias Utilizadas
-- Documentação escrita em Markdown
-- Diagramas elaborados com Astah
-- Repositório hospedado no GitHub
+>Link: [Modelo Conceitual](link aqui)
 
-# Equipe
-- Juliana Vianna de Araújo [20241011110013]
-- Luna de Oliveira Bezerril Deodato [20241011110004]
-- Nicole de Aquino Xavier [20241011110008]
+## Tecnologias utilizadas <h2>
+>- Documentação escrita em Markdown
+>- Diagramas elaborados com Astah
+>- Repositório hospedado no GitHub
+
+## Equipe <h2>
+>- Juliana Vianna de Araújo [20241011110013]
+>- Luna de Oliveira Bezerril Deodato [20241011110004]
+>- Nicole de Aquino Xavier [20241011110008]
