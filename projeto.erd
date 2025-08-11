@@ -19,6 +19,7 @@ entity Titulo {
 entity Filme extends Titulo{
     duracao 
     codigo key
+	attr1
 }
 
 entity Serie extends Titulo{
@@ -58,7 +59,7 @@ weak entity Resenha{
     user_email partial-key
     titulo 
     encorpo
-    tema
+    // tema
 }
 
 weak entity Episodio{
@@ -69,9 +70,7 @@ weak entity Episodio{
     status
 }
 
-weak relationship Episodio_Comentario{
-    Comentario[1..N] -> Episodio[0..N]
-}
+
 
 weak relationship Titulo_Lista{
     Lista[N] -> Titulo[1..N]
